@@ -8,6 +8,13 @@
 
 <h1>{{pageTitle}}</h1>
 
+<form name="regform" action="/about" method="Get">
+Username: <input type="text" name="username">
+Surname: <input type="text" name="surname">
+<button type="submit" id="submitbutton">Register</button>
+</form>
+<p>{{Username}}</p>
+<p>{{Password}}</p>
 {{> footer}}
 </body>
 </html>
