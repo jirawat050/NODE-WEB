@@ -26,9 +26,12 @@ app.get('/',(req, res) => {
     });
 });
 app.get('/about',(req, res) => {
+
     res.render('about.hbs',{
         pageTitle: 'About Page',
-        CurrentYear: new Date().getFullYear()
+        CurrentYear: new Date().getFullYear(),
+        Username: req.query.username,
+        Password: req.query.surname
     });
 });
 app.get('/',(req, res) => {
