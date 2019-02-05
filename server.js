@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs') 
 const fs = require('fs') 
 var app = express();
+
 hbs.registerPartials(__dirname + '/views/patials');
 app.set('viewengine','hbs');
 app.use(express.static(__dirname + '/public'));
